@@ -22,13 +22,16 @@ Human
 dumbAI
     - a subclass of player that handles computer decisions.
 Hand
-    - holds the hand of each player, has methods that tell if the hand is full, remove cards from the hand, adds cards, and checks whether a particular card is in the hand.
+    - holds the hand of each player, has methods that tell if the hand is full, remove cards from the
+      hand, adds cards, and checks whether a particular card is in the hand.
 Buildpile
     - contains the stockpile of each player and relevant methods regarding its use.
 Deck
-    - a generic class that is used as a container in other classes, but also takes care of shuffling and reshuffling the set of playable cards as the game goes on.
+    - a generic class that is used as a container in other classes, but also takes care of
+      shuffling and reshuffling the set of playable cards as the game goes on.
 Game
-    - class that contains methods to run the full game, as well as save and load games. The main workhorse of our program.
+    - class that contains methods to run the full game, as well as save and load games. The main
+      workhorse of our program.
 
 Skip-Bo Driver
     - runs methods in Game and gets user input for start of game options.
