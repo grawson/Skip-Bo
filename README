@@ -1,0 +1,45 @@
+******************************************SKIP-BO**************************************************
+
+This program is text-based version of the card game Skip-Bo; the rules are a bit similar to
+solitare. The game can be played with human and/or computer players, and the user can decide
+on the stockpile size from the beginning. The game also has a save/load feature, and a whole
+bunch of colorful text!
+
+The whole project was done with three other team members.
+
+***************************************************************************************************
+
+
+list of classes:
+
+	- Table 
+			- holds the four decks in the middle of the "table" that are visible to all players
+			- displays the table to each player, and moves cards out of play when necessary
+	- Player
+			- a super class that holds methods for playing cards and refilling the hand
+	- Human 
+			- a subclass of player that handles input and output for the user
+	- dumbAI
+			- a subclass of player that handles computer decisions.
+	- Hand
+			- holds the hand of each player, has methods that tell if the hand is full, remove cards from the hand, adds cards,
+			  and checks whether a particular card is in the hand.
+	- Buildpile
+			- contains the stockpile of each player and relevant methods regarding its use.
+	- Deck
+			- a generic class that is used as a container in other classes, but also takes care of shuffling and reshuffling the set 
+			  of playable cards as the game goes on.
+	- Game
+			- class that contains methods to run the full game, as well as save and load games. The main workhorse of our program.
+
+	- Skip-Bo Driver
+			- runs methods in Game and gets user input for start of game options.
+
+Use:
+	make test
+		- compiles tests
+	make
+		- compiles Skip-Bo executable
+
+    ./Skip-Bo
+        - runs the program after it is compiled
